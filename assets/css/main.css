@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  max-width: 1440px;
+  margin: auto;
+  background-image: url("https://preview.colorlib.com/theme/bizpro/images/home/slide-1.jpg.webp");
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  opacity: 0.8;
+}
+header .navbar img {
+  cursor: pointer;
+}
+header .navbar .home_about {
+  display: flex;
+  gap: 20px;
+}
+header .navbar .home_about li {
+  position: relative;
+  list-style: none;
+}
+header .navbar .home_about li a {
+  text-decoration: none;
+  color: white;
+}
+header .navbar .home_about li a:hover {
+  color: #d73e4d;
+}
+header .navbar .home_about li .Details {
+  display: none;
+  color: white;
+}
+header .navbar .btn_clik {
+  display: none;
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+@media only screen and (max-width: 768px) {
+  header .navbar .home_about {
+    display: none;
+  }
+  header .navbar .btn_clik {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header .navbar li.blog:hover .Details {
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+}
+header .header_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+header .header_section a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #d73e4d;
+  padding: 15px 10px;
+}
+header .header_section a:hover {
+  background-color: #d73e4d;
+}
+header .header_section h1 {
+  font-size: 80px;
+}
+header .header_section h2 {
+  font-size: 40px;
+}
+@media only screen and (max-width: 768px) {
+  header .header_section {
+    display: flex;
+    flex-direction: column;
+  }
+  header .header_section h1 {
+    font-size: 60px;
+  }
+  header .header_section h2 {
+    font-size: 30px;
+  }
+}
+
+.home_clik_about {
+  display: flex !important;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  gap: 20px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+}
+.home_clik_about li {
+  position: relative;
+  list-style: none;
+  color: white;
+}
+.home_clik_about li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+}
+.home_clik_about li .Details {
+  display: none;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .Details_bt {
+    display: block !important;
+    padding: 10px;
+  }
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+main .about_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+main .about_section h2 {
+  font-size: 40px;
+}
+main .about_section hr {
+  width: 20px;
+  height: 5px;
+  background-color: #d73e4d;
+}
+main .about_section p {
+  max-width: 70%;
+  font-size: 20px;
+  color: rgb(114, 110, 110);
+}
+main .about_section .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .about_section .cards .card {
+  width: 32%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}
+main .about_section .cards .card h2 {
+  font-size: 20px;
+}
+main .about_section .cards .card i {
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid #d73e4d;
+  font-size: 40px;
+}
+main .about_section .cards .card i:hover {
+  background-color: #d73e4d;
+  color: white;
+}
+main .about_section .cards .card a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  border: 1px solid #d73e4d;
+}
+main .about_section .cards .card a:hover {
+  color: white;
+  background-color: #d73e4d;
+}
+@media only screen and (max-width: 768px) {
+  main .about_section .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  main .about_section .cards .card {
+    width: 100%;
+  }
+}
+main .meet_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+main .meet_section h2 {
+  font-size: 40px;
+}
+main .meet_section hr {
+  width: 20px;
+  height: 5px;
+  background-color: #d73e4d;
+}
+main .meet_section p {
+  max-width: 70%;
+  font-size: 20px;
+  color: rgb(114, 110, 110);
+}
+main .meet_section .meet_cards {
+  display: flex;
+  gap: 30px;
+}
+main .meet_section .meet_cards .meet_card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: rgb(114, 110, 110);
+  width: 32%;
+}
+main .meet_section .meet_cards .meet_card img {
+  width: 100%;
+}
+main .meet_section .meet_cards .meet_card img:hover {
+  opacity: 0.7;
+}
+main .meet_section .meet_cards .meet_card h4 {
+  font-size: 20px;
+}
+main .meet_section .meet_cards .meet_card p {
+  font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+  main .meet_section {
+    display: flex;
+    flex-direction: column;
+  }
+  main .meet_section .meet_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  main .meet_section .meet_cards .meet_card {
+    width: 100%;
+  }
+}
+main .blog_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+main .blog_section h2 {
+  font-size: 40px;
+}
+main .blog_section hr {
+  width: 20px;
+  height: 5px;
+  background-color: #d73e4d;
+}
+main .blog_section p {
+  max-width: 70%;
+  font-size: 20px;
+  color: rgb(114, 110, 110);
+}
+main .blog_section .blog_cards {
+  display: flex;
+  gap: 30px;
+}
+main .blog_section .blog_cards .blog_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 32%;
+  text-align: start;
+}
+main .blog_section .blog_cards .blog_card img {
+  width: 100%;
+  background-color: black;
+}
+main .blog_section .blog_cards .blog_card img:hover {
+  transform: scale(1.02);
+}
+main .blog_section .blog_cards .blog_card p {
+  max-width: 100%;
+  font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+  main .blog_section .blog_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  main .blog_section .blog_cards .blog_card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

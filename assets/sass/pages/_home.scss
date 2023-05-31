@@ -1,0 +1,194 @@
+main{
+    max-width: 1440px;
+    margin: auto;
+    .about_section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        h2{
+            font-size:40px;
+        }
+        hr{
+            width:20px;
+            height: 5px;
+            background-color: #d73e4d;
+        }
+        p{
+            max-width: 70%;
+            font-size: 20px;
+            color: rgb(114, 110, 110);
+        }
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .card{
+                width: 32%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                padding: 10px;
+                h2{
+                    font-size: 20px;
+                }
+                i{
+                //    width:100% ; 
+                   padding: 20px;
+                   border-radius: 50% ;
+                   border: 1px solid #d73e4d ;
+                   font-size: 40px;
+                }
+                i:hover{
+                    background-color: #d73e4d;
+                    color: white;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 10px 15px ;
+                    border: 1px solid #d73e4d;
+                }
+                a:hover{
+                    color: white;
+                    background-color: #d73e4d;
+                }
+                
+            }
+
+        }
+        @media only screen and (max-width: 768px){
+            .cards{
+                display: flex;
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .meet_section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        h2{
+            font-size:40px;
+        }
+        hr{
+            width:20px;
+            height: 5px;
+            background-color: #d73e4d;
+        }
+        p{
+            max-width: 70%;
+            font-size: 20px;
+            color: rgb(114, 110, 110);
+        }   
+    
+    .meet_cards{
+        display: flex;
+        gap: 30px;
+        .meet_card{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            color:  rgb(114, 110, 110);
+            width: 32%;
+            img{
+                width: 100%;
+            }
+            img:hover{
+                opacity: 0.7;
+            }
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        .meet_cards{
+            display: flex;
+            flex-direction: column;
+            .meet_card{
+                width: 100%;
+            }
+        }
+    }
+    }
+    .blog_section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        h2{
+            font-size:40px;
+        }
+        hr{
+            width:20px;
+            height: 5px;
+            background-color: #d73e4d;
+        }
+        p{
+            max-width: 70%;
+            font-size: 20px;
+            color: rgb(114, 110, 110);
+        }  
+        .blog_cards{
+            display: flex;
+            gap: 30px;
+            .blog_card{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 32%;
+                text-align: start;
+                img{
+                    width: 100%;
+                    background-color: black;
+                }
+                img:hover{
+                    transform: scale(1.02);
+                    
+                    
+                }
+                p{
+                    max-width: 100%;
+                    font-size: 15px;
+                }
+
+            }
+        }
+        @media only screen and (max-width: 768px){
+            .blog_cards{
+                display: flex;
+                flex-direction: column;
+                .blog_card{
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+}

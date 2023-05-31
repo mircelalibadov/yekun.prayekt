@@ -1,0 +1,148 @@
+header{
+max-width: 1440px;
+margin: auto;
+background-image: url("https://preview.colorlib.com/theme/bizpro/images/home/slide-1.jpg.webp");
+   
+.navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        background-color: black ;
+        position: fixed;
+        width: 100%;
+        opacity: 0.8;
+        img{
+            cursor: pointer;
+        }
+        .home_about{
+            display: flex;
+            gap: 20px;
+            li{
+                position: relative;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    
+                }
+                a:hover {
+                    color: #d73e4d;
+                }
+                .Details{
+                    display: none;
+                    color: white;
+                }
+            }
+            // li.blog:hover .Details{
+            //     display: block;
+            //     position: absolute;
+            //     background-color: black;
+            //     color: white;
+            //     padding: 10px;
+            // }
+        }
+        .btn_clik{
+            display: none;
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+        @media only screen and (max-width: 768px){
+            .home_about{
+                display: none;
+            }
+            .btn_clik{
+                display: block;
+            }
+            
+        }
+        @media only screen and (min-width: 768px){
+            li.blog:hover .Details{
+                display: block;
+                position: absolute;
+                background-color: black;
+                color: white;
+                padding: 10px;
+            }
+        }
+    }
+
+    .header_section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 15%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: white;
+            border: 1px solid #d73e4d;
+            padding: 15px 10px;
+        }
+        a:hover{
+            background-color: #d73e4d;
+        }
+        h1{
+            font-size:80px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        @media only screen and (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size:60px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
+        
+    }
+
+
+
+
+
+
+
+
+}
+
+.home_clik_about{
+    display: flex !important;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    li{
+        position: relative;
+        list-style: none;
+        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+            padding-left: 10px;
+        }
+        
+        .Details{
+            display: none;
+            color: white;
+        }
+    }
+    
+}
+.Details_bt{
+    @media only screen and (max-width: 768px){
+    display: block !important;
+    padding: 10px;}
+}
